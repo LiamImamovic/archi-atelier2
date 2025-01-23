@@ -1,0 +1,51 @@
+version: 2
+
+models:
+  - name: dim_users
+    description: "Dimension des utilisateurs uniques ayant interagi avec le dépôt"
+    columns:
+      - name: user_id
+        description: "Identifiant unique de l'utilisateur"
+        tests:
+          - unique
+          - not_null
+      - name: username
+        description: "Nom d'utilisateur GitHub"
+
+  - name: dim_dates
+    description: "Dimension temporelle pour toutes les activités"
+    columns:
+      - name: date
+        description: "Date de l'événement"
+        tests:
+          - unique
+          - not_null
+      - name: year
+        description: "Année"
+      - name: month
+        description: "Mois"
+      - name: day
+        description: "Jour"
+
+  - name: fact_repository_activity
+    description: "Table de faits des activités quotidiennes sur le dépôt"
+    columns:
+      - name: date
+        description: "Date des activités"
+        tests:
+          - unique
+          - not_null
+      - name: new_stars
+        description: "Nombre de nouvelles étoiles"
+      - name: new_forks
+        description: "Nombre de nouveaux forks"
+      - name: new_issues
+        description: "Nombre de nouvelles issues"
+      - name: closed_issues
+        description: "Nombre d'issues fermées"
+      - name: new_prs
+        description: "Nombre de nouvelles pull requests"
+      - name: merged_prs
+        description: "Nombre de pull requests fusionnées"
+      - name: total_activity
+        description: "Activité totale quotidienne" 

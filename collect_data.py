@@ -49,7 +49,7 @@ def collect_data():
     }
 
     for name, df in dataframes.items():
-        file_name = f"data/{name}_{datetime.now().strftime('%Y%m%d')}.parquet"
+        file_name = f"data/{name}.parquet"
         df.write_parquet(file_name)
         print(f"{file_name} enregistré avec succès.")
 

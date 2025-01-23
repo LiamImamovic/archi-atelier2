@@ -1,0 +1,86 @@
+[0m15:48:33.132980 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1055d0ad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1063efb10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1063efc50>]}
+
+
+============================== 15:48:33.140153 | 64989191-34aa-4b9f-93df-574745a53117 ==============================
+[0m15:48:33.140153 [info ] [MainThread]: Running with dbt=1.9.1
+[0m15:48:33.140920 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/l.imamovic/.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt init github_analytics', 'send_anonymous_usage_stats': 'True'}
+[0m15:48:33.172139 [debug] [MainThread]: Starter project path: /Users/l.imamovic/Desktop/archi2/my_venv/lib/python3.13/site-packages/dbt/include/starter_project
+[0m15:48:33.186058 [info ] [MainThread]: 
+Your new dbt project "github_analytics" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m15:48:33.186602 [info ] [MainThread]: Setting up your profile.
+[0m15:48:37.228662 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 4.1965084, "process_in_blocks": "0", "process_kernel_time": 0.448795, "process_mem_max_rss": "103002112", "process_out_blocks": "0", "process_user_time": 1.711501}
+[0m15:48:37.229314 [debug] [MainThread]: Command `dbt init` succeeded at 15:48:37.229179 after 4.20 seconds
+[0m15:48:37.229825 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10640a9e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1065271d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10648e8b0>]}
+[0m15:48:37.230324 [debug] [MainThread]: Flushing usage events
+[0m15:48:37.645099 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:03:16.525966 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111dc4ad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112c17b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112c17c50>]}
+
+
+============================== 16:03:16.534224 | 07a7dcbf-cb01-438f-97f0-854e25b3357e ==============================
+[0m16:03:16.534224 [info ] [MainThread]: Running with dbt=1.9.1
+[0m16:03:16.535144 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/l.imamovic/Desktop/archi2', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m16:03:16.570924 [info ] [MainThread]: dbt version: 1.9.1
+[0m16:03:16.571428 [info ] [MainThread]: python version: 3.13.1
+[0m16:03:16.571815 [info ] [MainThread]: python path: /Users/l.imamovic/Desktop/archi2/my_venv/bin/python
+[0m16:03:16.572187 [info ] [MainThread]: os info: macOS-15.0.1-x86_64-i386-64bit-Mach-O
+[0m16:03:16.761707 [info ] [MainThread]: Using profiles dir at /Users/l.imamovic/Desktop/archi2
+[0m16:03:16.762241 [info ] [MainThread]: Using profiles.yml file at /Users/l.imamovic/Desktop/archi2/profiles.yml
+[0m16:03:16.762623 [info ] [MainThread]: Using dbt_project.yml file at /Users/l.imamovic/Desktop/archi2/dbt_project.yml
+[0m16:03:16.766939 [info ] [MainThread]: adapter type: duckdb
+[0m16:03:16.767396 [info ] [MainThread]: adapter version: 1.9.1
+[0m16:03:16.768015 [info ] [MainThread]: Configuration:
+[0m16:03:16.768463 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m16:03:16.768853 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m16:03:16.769255 [info ] [MainThread]: Required dependencies:
+[0m16:03:16.770167 [debug] [MainThread]: Executing "git --help"
+[0m16:03:16.787889 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:03:16.788923 [debug] [MainThread]: STDERR: "b''"
+[0m16:03:16.789417 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:03:16.789848 [info ] [MainThread]: Connection:
+[0m16:03:16.790383 [info ] [MainThread]:   database: lake
+[0m16:03:16.790793 [info ] [MainThread]:   schema: raw
+[0m16:03:16.791195 [info ] [MainThread]:   path: ../lake.duckdb
+[0m16:03:16.791766 [info ] [MainThread]:   config_options: None
+[0m16:03:16.792446 [info ] [MainThread]:   extensions: None
+[0m16:03:16.793124 [info ] [MainThread]:   settings: {}
+[0m16:03:16.793890 [info ] [MainThread]:   external_root: .
+[0m16:03:16.794409 [info ] [MainThread]:   use_credential_provider: None
+[0m16:03:16.794802 [info ] [MainThread]:   attach: None
+[0m16:03:16.795326 [info ] [MainThread]:   filesystems: None
+[0m16:03:16.795734 [info ] [MainThread]:   remote: None
+[0m16:03:16.796114 [info ] [MainThread]:   plugins: None
+[0m16:03:16.796483 [info ] [MainThread]:   disable_transactions: False
+[0m16:03:16.797262 [info ] [MainThread]: Registered adapter: duckdb=1.9.1
+[0m16:03:16.922488 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m16:03:17.075796 [debug] [MainThread]: Using duckdb connection "debug"
+[0m16:03:17.076300 [debug] [MainThread]: On debug: select 1 as id
+[0m16:03:17.076663 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:03:17.092390 [debug] [MainThread]: SQL status: OK in 0.016 seconds
+[0m16:03:17.093581 [debug] [MainThread]: On debug: Close
+[0m16:03:17.095522 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m16:03:17.096044 [info ] [MainThread]: [31m1 check failed:[0m
+[0m16:03:17.096436 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/l.imamovic/Desktop/archi2/dbt_project.yml> not found
+
+[0m16:03:17.100072 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.67984056, "process_in_blocks": "0", "process_kernel_time": 0.547635, "process_mem_max_rss": "111124480", "process_out_blocks": "0", "process_user_time": 1.905171}
+[0m16:03:17.100793 [debug] [MainThread]: Command `dbt debug` failed at 16:03:17.100617 after 0.68 seconds
+[0m16:03:17.101366 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m16:03:17.101944 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1132042b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112eccdd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112cbabe0>]}
+[0m16:03:17.102498 [debug] [MainThread]: Flushing usage events
+[0m16:03:17.503186 [debug] [MainThread]: An error was encountered while trying to flush usage events

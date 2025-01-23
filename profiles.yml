@@ -1,0 +1,7 @@
+github_analytics:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: '../lake.duckdb'
+      schema: raw 

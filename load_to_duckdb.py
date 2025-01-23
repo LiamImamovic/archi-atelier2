@@ -5,8 +5,10 @@ DATABASE = "lake.duckdb"
 RAW_SCHEMA = "raw"
 
 def load_to_duckdb():
-    conn = duckdb.connect(DATABASE)
-
+    conn = duckdb.connect(DATABASE, config={'allow_unsigned_extensions': True})
+    
+    conn.execute("INSTALL parquet;")
+    conn.execute("LOAD parquet;")
     conn.execute(f"CREATE SCHEMA IF NOT EXISTS {RAW_SCHEMA};")
 
     parquet_files = glob.glob("data/*.parquet")

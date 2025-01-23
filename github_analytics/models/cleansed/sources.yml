@@ -1,0 +1,51 @@
+version: 2
+
+sources:
+  - name: raw
+    database: lake
+    schema: raw
+    description: "Données brutes collectées via l'API GitHub"
+    tables:
+      - name: stars
+        description: "Liste des étoiles du dépôt Jupyter Notebook"
+        columns:
+          - name: user
+            description: "Nom d'utilisateur GitHub"
+          - name: starred_at
+            description: "Date à laquelle l'utilisateur a mis une étoile"
+
+      - name: forks
+        description: "Liste des forks du dépôt"
+        columns:
+          - name: user
+            description: "Nom d'utilisateur GitHub"
+          - name: created_at
+            description: "Date de création du fork"
+
+      - name: issues
+        description: "Issues ouvertes et fermées"
+        columns:
+          - name: id
+            description: "Identifiant unique de l'issue"
+          - name: title
+            description: "Titre de l'issue"
+          - name: state
+            description: "État de l'issue (open/closed)"
+          - name: created_at
+            description: "Date de création"
+          - name: closed_at
+            description: "Date de fermeture"
+
+      - name: pull_requests
+        description: "Pull requests"
+        columns:
+          - name: id
+            description: "Identifiant unique de la PR"
+          - name: title
+            description: "Titre de la PR"
+          - name: state
+            description: "État de la PR"
+          - name: created_at
+            description: "Date de création"
+          - name: merged_at
+            description: "Date de fusion"
